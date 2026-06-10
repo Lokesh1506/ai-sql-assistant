@@ -128,7 +128,7 @@ JSON Response
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Lokesh1506/ai-sql-assistant.git cd ai-sql-assistant
 cd ai-sql-assistant
 ```
 
@@ -238,6 +238,51 @@ This provides basic audit logging and query history.
 
 ### Security Validation
 ![Security Validation](screenshots/delete_query.png)
+
+---
+
+## Architectural Decisions
+
+### Why FastAPI?
+
+FastAPI was chosen because it provides:
+
+- Simple and lightweight REST API development
+- Automatic Swagger/OpenAPI documentation
+- Fast performance and easy testing
+- Built-in request validation using Pydantic
+
+### Why SQLite?
+
+SQLite was chosen because:
+
+- The assignment explicitly requires SQLite
+- No separate database server setup is needed
+- Easy local development and testing
+- Suitable for lightweight analytical workloads
+
+### Why Gemini?
+
+Gemini was used to:
+
+- Convert natural language questions into SQL queries
+- Generate business-friendly explanations for query results
+- Enable non-technical users to interact with data using plain English
+
+### Why SQL Validation?
+
+Generated SQL is validated before execution to prevent destructive operations such as:
+
+- DELETE
+- UPDATE
+- INSERT
+- DROP
+- ALTER
+- TRUNCATE
+- ATTACH
+- PRAGMA
+
+This ensures that only read-only queries are executed against the database, protecting data integrity and improving application security.
 
 ---
 
