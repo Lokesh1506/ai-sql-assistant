@@ -1,0 +1,37 @@
+[
+    {
+        "timestamp": "2026-06-10 17:35:09.605581",
+        "question": "Show all customers",
+        "sql": "SELECT\n  c.id AS customer_id,\n  c.name AS customer_name,\n  c.email AS customer_email,\n  c.city AS customer_city,\n  c.created_at AS account_creation_date\nFROM\n  customers AS c;"
+    },
+    {
+        "timestamp": "2026-06-10 17:43:17.183932",
+        "question": "Show all customers",
+        "sql": "SELECT\n  c.id,\n  c.name,\n  c.email,\n  c.city,\n  c.created_at\nFROM\n  customers AS c;"
+    },
+    {
+        "timestamp": "2026-06-10 17:44:56.495005",
+        "question": "How many orders are there?",
+        "sql": "SELECT COUNT(id) AS total_orders FROM orders"
+    },
+    {
+        "timestamp": "2026-06-10 17:45:51.082415",
+        "question": "Delete all orders",
+        "sql": "SELECT\n  ord.id AS OrderID,\n  ord.customer_id AS CustomerID,\n  ord.product_id AS ProductID,\n  ord.quantity AS OrderQuantity,\n  ord.order_date AS OrderDate\nFROM\n  orders AS ord;"
+    },
+    {
+        "timestamp": "2026-06-10 17:51:59.402303",
+        "question": "Show all customers",
+        "sql": "SELECT\n  c.id,\n  c.name,\n  c.email,\n  c.city,\n  c.created_at\nFROM customers AS c;"
+    },
+    {
+        "timestamp": "2026-06-10 17:53:07.055898",
+        "question": "How many orders are there?",
+        "sql": "SELECT COUNT(o.id) AS total_orders\nFROM orders AS o;"
+    },
+    {
+        "timestamp": "2026-06-10 17:54:06.962395",
+        "question": "Show all customers",
+        "sql": "SELECT\n  c.id AS customer_id,\n  c.name AS customer_name,\n  c.email AS customer_email,\n  c.city AS customer_city,\n  c.created_at AS customer_created_at\nFROM customers AS c;"
+    }
+]
