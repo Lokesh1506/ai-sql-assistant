@@ -128,7 +128,7 @@ JSON Response
 ### Clone Repository
 
 ```bash
-git clone https://github.com/Lokesh1506/ai-sql-assistant.git cd ai-sql-assistant
+git clone https://github.com/Lokesh1506/ai-sql-assistant.git 
 cd ai-sql-assistant
 ```
 
