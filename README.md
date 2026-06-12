@@ -317,5 +317,3 @@ This ensures that only read-only queries are executed against the database, prot
 ## Author
 
 Lokesh U
-
-Technical Interview Assignment Submission
